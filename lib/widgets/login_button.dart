@@ -5,7 +5,7 @@ import '../utils/constant/string_constants.dart';
 class SocialLoginButton extends StatelessWidget {
   final Color buttonColor;
   final Color textColor;
-  final IconData? buttonIcon;
+  final String? buttonIcon;
   final AuthPlatform? loginButtonType;
   final VoidCallback? onTap;
 
@@ -31,14 +31,13 @@ class SocialLoginButton extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            if (buttonIcon != null)
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Icon(buttonIcon, color: textColor),
-                ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: buttonIcon != null ? Image.asset(buttonIcon!, width: 32, height: 32) : Icon(Icons.phone, color: textColor),
               ),
+            ),
             Center(
               child: Text(
                 _getLoginButtonName(loginButtonType),

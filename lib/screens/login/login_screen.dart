@@ -7,7 +7,6 @@ import 'package:hungry_hub/widgets/please_wait_dialog.dart';
 import 'package:hungry_hub/widgets/sized_boxes.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 
-import '../../utils/auth_service.dart';
 import '../../utils/constant/string_constants.dart';
 import '../../widgets/login_button.dart';
 
@@ -33,7 +32,7 @@ class LoginScreen extends GetView<AuthController> {
                       children: [
                         SocialLoginButton(
                           loginButtonType: AuthPlatform.Google,
-                          buttonIcon: Icons.login_rounded,
+                          buttonIcon: ImageConstants.googleIcon,
                           onTap: () async {
                             if (!await InternetConnectionChecker().hasConnection) {
                               Fluttertoast.showToast(msg: StringConstants.pleaseTurnOnTheInternet);
@@ -46,7 +45,6 @@ class LoginScreen extends GetView<AuthController> {
                         const SocialLoginButton(
                           loginButtonType: AuthPlatform.Phone,
                           buttonColor: Colors.green,
-                          buttonIcon: Icons.phone,
                         ),
                       ],
                     ),

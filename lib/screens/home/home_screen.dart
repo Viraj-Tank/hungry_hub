@@ -81,7 +81,6 @@ class HomeScreen extends GetView<HomeController> {
         children: [
           DrawerHeader(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
                   radius: 40,
@@ -90,7 +89,11 @@ class HomeScreen extends GetView<HomeController> {
                 gapH8,
                 Text(
                   '${FirebaseAuth.instance.currentUser?.displayName}',
-                  style: const TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 18),
+                ),
+                Text(
+                  '${FirebaseAuth.instance.currentUser?.uid}',
+                  style: const TextStyle(fontSize: 10),
                 ),
               ],
             ),

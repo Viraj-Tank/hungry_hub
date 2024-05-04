@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:hungry_hub/controller/home_controller.dart';
 import 'package:hungry_hub/utils/constant/string_constants.dart';
@@ -110,11 +109,7 @@ class CartScreen extends StatelessWidget {
 
   _placeOrderButton(HomeController controller) {
     return GestureDetector(
-      onTap: () {
-        Fluttertoast.showToast(msg: 'Order Placed Successfully');
-        controller.confirmPlaceOrder();
-        Get.back();
-      },
+      onTap: controller.confirmPlaceOrder,
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 14.0),
         margin: const EdgeInsets.symmetric(horizontal: 16.0),

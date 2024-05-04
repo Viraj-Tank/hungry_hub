@@ -9,4 +9,6 @@ class StringConstants {
   static const placeOrder = 'Place Order';
   static const dummyDescription = 'Meal Description: Lorem Ipsum is simply dummy text of the printing and typesetting industry';
   static const totalAmount = 'Total Amount';
+  static const noItemsToOrder = 'No Items To Order';
+  static const orderPlacedSuccessfully = 'Order Placed Successfully';
 }
