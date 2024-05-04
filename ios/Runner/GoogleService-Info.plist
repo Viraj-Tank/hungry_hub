@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>986212102239-1n5ndcr5nk9dpadgl5ve7t5qqlmsbd07.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.986212102239-1n5ndcr5nk9dpadgl5ve7t5qqlmsbd07</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>986212102239-bf9pv4tgi24q2em50pddjflbh5h1h2tr.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBeeTsrisXTEh0kioXIsJy0kgaldjNy8kI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>986212102239</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.novuspax.hungryHub</string>
+	<key>PROJECT_ID</key>
+	<string>hungryhub-22faf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hungryhub-22faf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:986212102239:ios:a370285e12458a9dc72bea</string>
+</dict>
+</plist>

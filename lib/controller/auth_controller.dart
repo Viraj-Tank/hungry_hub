@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -29,9 +31,9 @@ class AuthController extends GetxController {
 
   signInWithGoogle() async {
     try {
-      setProgress(true);
-      final GoogleSignInAccount? googleUser = await GoogleSignIn(scopes: ['email']).signIn();
+      final GoogleSignInAccount? googleUser = await GoogleSignIn(scopes: ['email']).signIn().catchError((_) => setProgress(false));
       if (googleUser != null) {
+        setProgress(true);
         final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
         final credential = GoogleAuthProvider.credential(
           accessToken: googleAuth.accessToken,
