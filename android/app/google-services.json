@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "986212102239",
+    "project_id": "hungryhub-22faf",
+    "storage_bucket": "hungryhub-22faf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986212102239:android:c630a1e512584ad3c72bea",
+        "android_client_info": {
+          "package_name": "com.novus_pax.hungry_hub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_tcT7-Z7JmjRo_o1Challr43ckjb5izw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
